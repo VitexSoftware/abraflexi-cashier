@@ -1,0 +1,57 @@
+# Cashier for AbraFlexi
+
+![Logo](https://raw.githubusercontent.com/VitexSoftware/abraflexi-cashier/main/logo.png)
+
+**Cashier for AbraFlexi** is a PHP-based tool that helps manage your cash register by generating weekly expense receipts based on the current balance in your AbraFlexi account.
+
+## Features
+
+- Iterates through weeks from the earliest transaction to the most recent
+- Calculates weekly cash income
+- Automatically creates an expense receipt at the end of each week
+- Supports dry-run mode for simulation without data changes
+- Easily extendable and configurable
+
+## Installation
+
+Use Composer to install:
+
+```bash
+composer require vitexsoftware/abraflexi-cashier
+```
+
+## Usage
+
+```php
+use AbraFlexi\Cash\Cashier;
+
+$cashier = new Cashier('custom_scope');
+$cashier->enableDryRun(); // optional
+$result = $cashier->fixAll();
+
+print_r($result);
+```
+
+## Configuration
+
+You can set the following environment variables to control behavior:
+
+- `ABRAFLEXI_URL`
+- `ABRAFLEXI_LOGIN`
+- `ABRAFLEXI_PASSWORD`
+- `ABRAFLEXI_CASH_BOX`
+- `ABRAFLEXI_CASH_ROW`
+- `ABRAFLEXI_CASH_TYPE`
+- `ABRAFLEXI_CASH_ACCOUNTING`
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+**Project Homepage:** [github.com/VitexSoftware/abraflexi-cashier](https://github.com/VitexSoftware/abraflexi-cashier)

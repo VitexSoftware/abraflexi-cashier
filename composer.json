@@ -1,6 +1,6 @@
 {
     "name": "vitexsoftware/abraflexi-cashier",
-    "description": "Every month, he inserts an expense document \"own consumption\" into the cash register so that the cash register remains empty in accounting terms.",
+    "description": "Every week, he inserts an expense document \"own consumption\" into the cash register so that the cash register remains empty in accounting terms.",
     "type": "project",
     "require": {
         "spojenet/flexibee": "dev-main",
