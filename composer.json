@@ -1,0 +1,36 @@
+{
+    "name": "vitexsoftware/abraflexi-cashier",
+    "description": "Every month, he inserts an expense document \"own consumption\" into the cash register so that the cash register remains empty in accounting terms.",
+    "type": "project",
+    "require": {
+        "spojenet/flexibee": "dev-main",
+        "vitexsoftware/ease-core": "^1.48"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AbraFlexi\\Cash\\": "src/AbraFlexi/Cash/"
+        }
+    },
+    "authors": [
+        {
+            "name": "CyberVitexus",
+            "email": "info@vitexsoftware.cz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "phpstan/phpstan": "*",
+        "friendsofphp/php-cs-fixer": "^3.61",
+        "ergebnis/composer-normalize": "^2.43",
+        "ergebnis/php-cs-fixer-config": "^6.34",
+        "phpstan/phpstan-phpunit": "2.0.x-dev"
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    }
+
+}
