@@ -12,26 +12,6 @@
 - Supports dry-run mode for simulation without data changes
 - Easily extendable and configurable
 
-## Installation
-
-Use Composer to install:
-
-```bash
-composer require vitexsoftware/abraflexi-cashier
-```
-
-## Usage
-
-```php
-use AbraFlexi\Cash\Cashier;
-
-$cashier = new Cashier('custom_scope');
-$cashier->enableDryRun(); // optional
-$result = $cashier->fixAll();
-
-print_r($result);
-```
-
 ## Configuration
 
 You can set the following environment variables to control behavior:

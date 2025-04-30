@@ -106,7 +106,8 @@ class Cashier extends \AbraFlexi\PokladniPohyb
     protected function getCashIncome(\DatePeriod $datePeriod): float
     {
         $weekSumData = $this->getSumsFromAbraFlexi(['sumCelkem'], ['datVyst' => $datePeriod, 'typPohybuK' => 'typPohybu.prijem']);
-        //print_r($weekSumData);
+
+        // print_r($weekSumData);
         return \array_key_exists('group', $weekSumData) ? (float) $weekSumData['group']['value']['value']['income'] : 0.0;
     }
 
