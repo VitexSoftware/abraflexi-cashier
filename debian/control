@@ -15,7 +15,7 @@ Architecture: any
 Multi-Arch: foreign
 Depends:
  ${misc:Depends},
- composer-debian
+ composer-debian,
  php-cli,
  php-spojenet-abraflexi (>=3.5)
 Description: Cash Tools for AbraFlexi
