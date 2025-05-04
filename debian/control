@@ -22,3 +22,11 @@ Description: Cash Tools for AbraFlexi
  Cashier for AbraFlexi is a PHP-based tool that helps manage 
  your cash register by generating weekly expense receipts
  based on the current balance in your AbraFlexi account.
+
+Package: multiflexi-abraflexi-cashier
+Depends: abraflexi-cashier, multiflexi
+Architecture: all
+Section: web
+Priority: optional
+Description: MultiFlexi configuration of AbraFlexi cashier
+ Set up AbraFlexi cashier tools in MultiFlexi
