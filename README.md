@@ -1,6 +1,6 @@
 # Cashier for AbraFlexi
 
-![Logo](https://raw.githubusercontent.com/VitexSoftware/abraflexi-cashier/main/logo.png)
+![Cashier](abraflexi-cashier.svg?raw=true)
 
 **Cashier for AbraFlexi** is a PHP-based tool that helps manage your cash register by generating weekly expense receipts based on the current balance in your AbraFlexi account.
 
@@ -39,7 +39,7 @@ This project is licensed under the MIT License.
 MultiFlexi
 ----------
 
-Cashirer for AbraFlexi is ready for run as [MultiFlexi](https://multiflexi.eu) application.
+Cashier for AbraFlexi is ready for run as [MultiFlexi](https://multiflexi.eu) application.
 
 <img src="abraflexi-inventarize.svg?raw=true" width="100" height="100"><img src="abraflexi-reminder-clean-labels.svg?raw=true" width="100" height="100"><img src="abraflexi-reminder.svg?raw=true" width="100" height="100"><img src="abraflexi-show-debts.svg?raw=true" width="100" height="100">
 

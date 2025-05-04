@@ -1,5 +1,7 @@
 # AbraFlexi Cashier
 
+![Cashier](abraflexi-cashier.svg?raw=true)
+
 > Automatizované "vysávání" hotovosti z pokladny ve vašem AbraFlexi systému
 
 ![PHP Version](https://img.shields.io/badge/php-%3E%3D8.1-blue)
