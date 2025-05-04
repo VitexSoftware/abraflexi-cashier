@@ -40,7 +40,14 @@
             "description": "write log messages using",
             "defval": "console|syslog",
             "required": false
+        },
+        "RESULT_FILE": {
+            "type": "string",
+            "description": "write output json data to",
+            "defval": "bank_import_report_{ACCOUNT_NUMBER}.json",
+            "required": false
         }
+        
     },
     "multiflexi": "1.20"
 }

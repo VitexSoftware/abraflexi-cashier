@@ -1,0 +1,13 @@
+#!/bin/sh
+# postinst script for abraflexi-cashier
+set -e
+
+if [ "$1" = "configure" ]; then
+
+    composer-debian abraflexi-cashier
+fi
+
+
+#DEBHELPER#
+
+exit 0

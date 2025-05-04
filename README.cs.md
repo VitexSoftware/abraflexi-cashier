@@ -21,3 +21,15 @@ Tento nástroj postupně prochází všechny týdny od nejstaršího pohybu v po
 git clone https://github.com/VitexSoftware/abraflexi-cashier.git
 cd abraflexi-cashier
 composer install
+
+
+MultiFlexi
+----------
+
+Pokladník pro AbraFlexi je připraven běžet jako [MultiFlexi](https://multiflexi.eu) aplikace.
+
+<img src="abraflexi-inventarize.svg?raw=true" width="100" height="100"><img src="abraflexi-reminder-clean-labels.svg?raw=true" width="100" height="100"><img src="abraflexi-reminder.svg?raw=true" width="100" height="100"><img src="abraflexi-show-debts.svg?raw=true" width="100" height="100">
+
+Podívejte se na kompletní [stránku přehedu aplikací](https://www.multiflexi.eu/apps.php).
+
+[![MultiFlexi App](https://github.com/VitexSoftware/MultiFlexi/blob/main/doc/multiflexi-app.svg)](https://www.multiflexi.eu/apps.php)

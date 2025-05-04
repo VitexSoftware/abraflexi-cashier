@@ -1,6 +1,6 @@
 {
-  "name": "deb/abraflexi-reminder",
-  "description": "Reminder sender for AbraFlexi written in PHP",
+  "name": "deb/abraflexi-cashier",
+  "description": "Every week, he inserts an expense document \"own consumption\" into the cash register so that the cash register remains empty in accounting terms.",
   "type": "project",
   "authors": [
     {
@@ -9,7 +9,7 @@
     }
   ],
   "config": {
-    "vendor-dir": "/var/lib/composer/abraflexi-reminder"
+    "vendor-dir": "/var/lib/composer/abraflexi-cashier"
   },
   "require": {
     "deb/abraflexi": "*",
@@ -18,8 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AbraFlexi\\Reminder\\": "./Reminder/",
-      "AbraFlexi\\Reminder\\Notifier\\": "./Reminder/Notifier/"
+      "AbraFlexi\\Cash\\": "src/AbraFlexi/Cash/"
     }
   },
   "repositories": [
@@ -29,15 +28,7 @@
     },
     {
       "type": "path",
-      "url": "/usr/share/php/EaseHtml"
-    },
-    {
-      "type": "path",
       "url": "/usr/share/php/AbraFlexi"
-    },
-    {
-      "type": "path",
-      "url": "/usr/share/php/AbraFlexiBricks"
     }
   ]
 }

@@ -1,0 +1,12 @@
+debian/conf/composer.json       usr/lib/abraflexi-cashier/
+
+bin/*     /usr/bin
+src/*.php /usr/share/abraflexi-cashier/
+
+
+src/AbraFlexi/Cash/Cashier.php		/usr/lib/abraflexi-cashier/
+
+
+example.env				etc/abraflexi-cashier
+
+abraflexi-cashier.svg		usr/share/icons/hicolor/scalable/apps

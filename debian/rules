@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+# You must remove unused comment lines for the released package.
+#export DH_VERBOSE = 1
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1
+
+%:
+	dh $@
+
+#override_dh_auto_install:
+#	dh_auto_install -- prefix=/usr
+
+#override_dh_install:
+#	dh_install --list-missing -X.pyc -X.pyo
+
+
+override_dh_prep:
+	rm -rf vendor
+	dh_prep
+
+override_dh_install:
+	dh_install
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  debian/conf/composer.json |sponge debian/abraflexi-cashier/usr/lib/abraflexi-cashier/composer.json
+	sed -i -e 's/..\/i18n/\/usr\/share\/locale/g'            	      debian/abraflexi-cashier/usr/share/abraflexi-cashier/*.php
+	sed -i -e 's/..\/vendor/\/var\/lib\/composer\/abraflexi-cashier/g' 	      debian/abraflexi-cashier/usr/share/abraflexi-cashier/*.php
+	sed -i -e 's/..\/.env//'                                  debian/abraflexi-cashier/usr/share/abraflexi-cashier/*.php
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/abraflexi-cashier-withdrawal.multiflexi.app.json |sponge  debian/multiflexi-abraflexi-cashier/usr/lib/abraflexi-cashier/multiflexi/abraflexi-cashier-withdrawal.multiflexi.app.json

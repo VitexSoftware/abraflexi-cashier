@@ -15,6 +15,8 @@ declare(strict_types=1);
 
 namespace AbraFlexi\Cash;
 
+use Ease\Shared;
+
 /**
  * Cashier - Vysavač pokladny.
  */
@@ -32,7 +34,7 @@ class Cashier extends \AbraFlexi\PokladniPohyb
     {
         parent::__construct(null, $options);
         $this->setScope($scope);
-        $this->expenseText = \Ease\Shared::cfg('ABRAFLEXI_CASH_TEXT');
+        $this->expenseText = Shared::cfg('ABRAFLEXI_CASH_TEXT');
     }
 
     /**
