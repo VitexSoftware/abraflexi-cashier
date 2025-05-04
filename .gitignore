@@ -12,3 +12,6 @@
 /.build/
 /nbproject/
 debian/abraflexi-cashier.debhelper.log
+debian/multiflexi-abraflexi-cashier/
+debian/multiflexi-abraflexi-cashier.debhelper.log
+debian/multiflexi-abraflexi-cashier.substvars
