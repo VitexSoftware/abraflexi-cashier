@@ -14,7 +14,7 @@
   "require": {
     "deb/abraflexi": "*",
     "deb/ease-core": "*",
-    "deb/abraflexi-bricks": "*"
+    "deb/abraflexi": "*"
   },
   "autoload": {
     "psr-4": {
