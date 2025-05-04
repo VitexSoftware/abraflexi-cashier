@@ -25,4 +25,5 @@ override_dh_install:
 	sed -i -e 's/..\/i18n/\/usr\/share\/locale/g'            	      debian/abraflexi-cashier/usr/share/abraflexi-cashier/*.php
 	sed -i -e 's/..\/vendor/\/var\/lib\/composer\/abraflexi-cashier/g' 	      debian/abraflexi-cashier/usr/share/abraflexi-cashier/*.php
 	sed -i -e 's/..\/.env//'                                  debian/abraflexi-cashier/usr/share/abraflexi-cashier/*.php
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/abraflexi-cashier-withdrawal.multiflexi.app.json |sponge  debian/multiflexi-abraflexi-cashier/usr/lib/abraflexi-cashier/multiflexi/abraflexi-cashier-withdrawal.multiflexi.app.json
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/abraflexi-cashier-withdrawal.multiflexi.app.json |sponge  debian/abraflexi-cashier/usr/lib/abraflexi-cashier/multiflexi/abraflexi-cashier-withdrawal.multiflexi.app.json
+

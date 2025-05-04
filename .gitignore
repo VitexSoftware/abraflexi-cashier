@@ -1,9 +1,9 @@
 /composer.lock
 /vendor/
-/debian/abraflexi-report-tools/
+/debian/abraflexi-cashier/
 /debian/debhelper-build-stamp
-/debian/abraflexi-report-tools.debhelper.log
-/debian/abraflexi-report-tools.substvars
+/debian/abraflexi-cashier.debhelper.log
+/debian/abraflexi-cashier.substvars
 /nbproject/private/
 /debian/.debhelper/
 /tests/client.json
@@ -11,3 +11,4 @@
 /debian/files
 /.build/
 /nbproject/
+debian/abraflexi-cashier.debhelper.log

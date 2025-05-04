@@ -44,10 +44,9 @@
         "RESULT_FILE": {
             "type": "string",
             "description": "write output json data to",
-            "defval": "bank_import_report_{ACCOUNT_NUMBER}.json",
+            "defval": "withdrawal_report_{ABRAFLEXI_COMPANY}.json",
             "required": false
         }
-        
     },
-    "multiflexi": "1.20"
+    "multiflexi": "1.27"
 }

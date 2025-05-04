@@ -14,7 +14,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__.'//var/lib/composer/abraflexi-cashier/autoload.php';
 
 use AbraFlexi\Cash\Cashier;
 use Ease\Shared;
@@ -32,11 +32,11 @@ Shared::init(
         'ABRAFLEXI_CASH_FIX_SCOPE',
         'APP_DEBUG',
     ],
-    file_exists(__DIR__.'/../.env') ? __DIR__.'/../.env' : null,
+    file_exists(__DIR__.'/') ? __DIR__.'/../.env' : null,
 );
 
 // Optional CLI parameters
-$options = getopt('o::e::', ['output::','environment::','dry-run', 'scope:', 'from:', 'to:']);
+$options = getopt('o::e::', ['output::', 'environment::', 'dry-run', 'scope:', 'from:', 'to:']);
 $destination = \array_key_exists('o', $options) ? $options['o'] : (\array_key_exists('output', $options) ? $options['output'] : \Ease\Shared::cfg('RESULT_FILE', 'php://stdout'));
 
 $scope = $options['scope'] ?? Shared::cfg('ABRAFLEXI_CASH_FIX_SCOPE', 'last_month');
@@ -53,15 +53,15 @@ if (Shared::cfg('APP_DEBUG')) {
 // Dry-run flag
 if ($dryRun) {
     $cashier->enableDryRun();
-    $cashier->addSatusMessage("Running in DRY-RUN mode. No real changes will be saved.") ;
+    $cashier->addSatusMessage('Running in DRY-RUN mode. No real changes will be saved.');
 }
 
 // Run the fixing process
 $report = $cashier->fixAll();
 
-    $cashier->addSatusMessage('Fixing completed. Result: '.json_encode($result));
+$cashier->addSatusMessage('Fixing completed. Result: '.json_encode($result));
 
-    $report['exitcode'] = $exitcode;
+$report['exitcode'] = $exitcode;
 $written = file_put_contents($destination, json_encode($report, Shared::cfg('DEBUG') ? \JSON_PRETTY_PRINT | \JSON_UNESCAPED_UNICODE : 0));
 $cashier->addStatusMessage(sprintf(_('Saving result to %s'), $destination), $written ? 'success' : 'error');
 

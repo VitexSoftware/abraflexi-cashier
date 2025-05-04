@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AbraFlexi\\Cash\\": "src/AbraFlexi/Cash/"
+      "AbraFlexi\\Cash\\": "./"
     }
   },
   "repositories": [
