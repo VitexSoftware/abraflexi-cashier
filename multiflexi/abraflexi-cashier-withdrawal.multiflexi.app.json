@@ -5,11 +5,11 @@
     "executable": "abraflexi-cashier-withdrawal",
     "setup": "",
     "cmdparams": "",
-    "requirements": "AbraFlexi",
+    "requirements": ["AbraFlexi"],
     "uuid": "250c3c51-039b-4281-8cb7-03112c8b0a03",
     "deploy": "apt install abraflexi-cashier",
     "homepage": "https://github.com/VitexSoftware/abraflexi-cashier",
-    "topics": "AbraFlexi,Cash,Expenditure",
+    "topics": ["AbraFlexi", "Cash", "Expenditure"],
     "environment": {
         "ABRAFLEXI_COMPANY": {
             "type": "string",
@@ -48,5 +48,6 @@
             "required": false
         }
     },
+    "version": "1.0.0",
     "multiflexi": "1.27"
 }
