@@ -26,7 +26,7 @@ Description: Cash Tools for AbraFlexi
  based on the current balance in your AbraFlexi account.
 
 Package: multiflexi-abraflexi-cashier
-Depends: abraflexi-cashier, multiflexi
+Depends: abraflexi-cashier, multiflexi-cli
 Architecture: all
 Section: web
 Priority: optional

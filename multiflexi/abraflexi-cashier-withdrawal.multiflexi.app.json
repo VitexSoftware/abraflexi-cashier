@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
+  "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/schema/application.json",
   "schemaVersion": "3.2.1",
   "uuid": "250c3c51-039b-4281-8cb7-03112c8b0a03",
   "name": {
@@ -11,11 +11,7 @@
     "cs": "Oficiálně vyprázdněte svou pokladnu"
   },
   "version": "1.0.0",
-  "tags": [
-    "AbraFlexi",
-    "Cash",
-    "Expenditure"
-  ],
+  "tags": ["AbraFlexi", "Cash", "Expenditure"],
   "homepage": "https://github.com/VitexSoftware/abraflexi-cashier",
   "image": "",
   "executable": "abraflexi-cashier-withdrawal",
@@ -79,6 +75,12 @@
       "defval": "withdrawal_report_{ABRAFLEXI_COMPANY}.json",
       "required": false,
       "category": "Other"
+    }
+  },
+  "exitCodes": {
+    "0": {
+      "en": "Success",
+      "cs": "Úspěch"
     }
   }
 }
