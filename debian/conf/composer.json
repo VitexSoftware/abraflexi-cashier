@@ -8,13 +8,9 @@
       "email": "info@vitexsoftware.cz"
     }
   ],
-  "config": {
-    "vendor-dir": "/var/lib/composer/abraflexi-cashier"
-  },
   "require": {
     "deb/abraflexi": "*",
-    "deb/ease-core": "*",
-    "deb/abraflexi": "*"
+    "deb/ease-core": "*"
   },
   "autoload": {
     "psr-4": {
