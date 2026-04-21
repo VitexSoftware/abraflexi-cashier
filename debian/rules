@@ -21,6 +21,8 @@ override_dh_install:
 	install -D -m 0644 debian/autoload.php debian/abraflexi-cashier/usr/share/php/abraflexi-cashier/autoload.php
 	sed -i "1a defined('APP_NAME') || define('APP_NAME', '$(PKG_SOURCE)');" \
 		debian/abraflexi-cashier/usr/share/php/abraflexi-cashier/autoload.php
+	sed -i "s|: 'unknown'|: '$(PKG_SOURCE)'|" \\
+		debian/abraflexi-cashier/usr/share/php/abraflexi-cashier/autoload.php
 	sed -i "2a defined('APP_VERSION') || define('APP_VERSION', '$(PKG_VERSION)');" \
 		debian/abraflexi-cashier/usr/share/php/abraflexi-cashier/autoload.php
 	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  debian/conf/composer.json |sponge debian/abraflexi-cashier/usr/lib/abraflexi-cashier/composer.json
