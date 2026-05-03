@@ -5,7 +5,8 @@ Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Build-Depends:
  debhelper-compat (= 13),
  jq,
- moreutils
+ moreutils,
+ pkg-php-tools
 Standards-Version: 4.7.0
 Homepage: https://github.com/VitexSoftware/abraflexi-cashier
 Rules-Requires-Root: no
