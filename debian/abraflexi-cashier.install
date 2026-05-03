@@ -10,3 +10,4 @@ src/AbraFlexi/Cash/*.php		/usr/lib/abraflexi-cashier/
 example.env				etc/abraflexi-cashier
 
 abraflexi-cashier.svg		usr/share/icons/hicolor/scalable/apps
+debian/io.github.vitexsoftware.abraflexi_cashier.metainfo.xml	usr/share/metainfo/

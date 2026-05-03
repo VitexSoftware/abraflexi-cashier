@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop-application">
+<component type="console-application">
   <id>io.github.vitexsoftware.abraflexi_cashier</id>
   <metadata_license>MIT</metadata_license>
   <project_license>MIT</project_license>
   <name>abraflexi-cashier</name>
-  <summary>Cash Tools for AbraFlexi</summary>
+  <icon type="stock">abraflexi-cashier</icon>
+  <summary>Cash withdrawal and receipt generation tool for AbraFlexi</summary>
   <description>
-    <p>
-      Cashier for AbraFlexi is a PHP-based tool that helps manage your cash register by generating weekly expense receipts based on the current balance in your AbraFlexi account. Set up AbraFlexi cashier tools in MultiFlexi
-    </p>
+    <p>Cashier for AbraFlexi is a PHP-based command-line tool that automates cash register management by generating weekly expense receipts based on the current balance in your AbraFlexi account.</p>
+    <p>Features include:</p>
+    <ul>
+      <li>Iterating through weeks from earliest to most recent transactions</li>
+      <li>Calculating weekly cash income</li>
+      <li>Automatically creating expense receipts at week-end</li>
+      <li>Dry-run mode for safe simulation</li>
+      <li>Full configuration via environment variables</li>
+    </ul>
   </description>
+  <provides>
+    <binary>abraflexi-cashier-withdrawal</binary>
+  </provides>
   <categories>
     <category>Utility</category>
   </categories>
@@ -18,5 +28,4 @@
   <developer id="cz.vitexsoftware">
     <name>VitexSoftware</name>
   </developer>
-  <content_rating type="oars-1.1"/>
 </component>
