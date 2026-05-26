@@ -79,8 +79,12 @@
   },
   "exitCodes": {
     "0": {
-      "en": "Success",
-      "cs": "Úspěch"
+      "description": {
+        "en": "Success",
+        "cs": "Úspěch"
+      },
+      "severity": "success",
+      "retry": false
     }
   }
 }
