@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/schema/application.json",
-  "schemaVersion": "3.2.1",
+  "schemaVersion": "3.4.0",
   "uuid": "250c3c51-039b-4281-8cb7-03112c8b0a03",
   "name": {
     "en": "automatic cash register withdrawal",
@@ -11,10 +11,21 @@
     "cs": "Oficiálně vyprázdněte svou pokladnu"
   },
   "version": "1.0.0",
-  "tags": ["AbraFlexi", "Cash", "Expenditure"],
+  "tags": [
+    "AbraFlexi",
+    "Cash",
+    "Expenditure"
+  ],
   "homepage": "https://github.com/VitexSoftware/abraflexi-cashier",
   "image": "",
   "executable": "abraflexi-cashier-withdrawal",
+  "events": {
+    "emits": {
+      "cashregister.withdrawn": {
+        "description": "A cash register withdrawal was recorded"
+      }
+    }
+  },
   "environment": {
     "ABRAFLEXI_COMPANY": {
       "type": "string",
