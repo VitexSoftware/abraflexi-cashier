@@ -1,6 +1,8 @@
 # Cashier for AbraFlexi
 
 ![Cashier](abraflexi-cashier.svg?raw=true)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Packaging: deb](https://img.shields.io/badge/packaging-.deb-red?logo=debian&logoColor=white)
 
 **Cashier for AbraFlexi** is a PHP-based tool that helps manage your cash register by generating weekly expense receipts based on the current balance in your AbraFlexi account.
 
