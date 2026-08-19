@@ -1,4 +1,4 @@
-# WARP.md - Working AI Reference for abraflexi-cashier
+# AGENTS.md - Working AI Reference for abraflexi-cashier
 
 ## Project Overview
 **Type**: PHP Project/Debian Package
